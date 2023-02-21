@@ -1,1 +1,0 @@
-# npcwestern.github.io
