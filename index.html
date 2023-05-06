@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>npc</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/logo.png">
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
 }
 
+i.fa {
+	font-size: 20px;
+}
+
+.padding-x-top {
+	padding-top: 20;
+}
+
 .bgimg {
   background-position: center;
   background-size: cover;
   background-image: url("img/index/background_image.jpg");
-  min-height: 85%;
+  min-height: 75%;
 }
 
 .menu {
@@ -25,10 +36,6 @@ body, html {
 
 .shadow {
 	filter: drop-shadow(0rem 0.5rem 1rem rgba(0, 0, 0, 1));
-}
-
-.shadowAlt {
-	filter: drop-shadow(0rem 0rem 0.3rem rgba(0, 0, 0, 0.2));
 }
 
 footer.a:link { 
@@ -46,6 +53,16 @@ footer.a:hover {
 footer.a:active { 
 	text-decoration: none; 
 	}
+
+.w3-top {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	}	
+
 </style>
 </head>
 <body>
@@ -68,16 +85,28 @@ footer.a:active {
   </div>
 </div>
 
-<!-- Header with image -->
+<!-- Header with image 
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomright w3-center w3-padding-large w3-hide-small">
     <span class="w3-tag">Originated from Western International School</span>
   </div>
-  <div class="shadow w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:120px"><font color="#42607F">npc</font><font color="#B23F45">western</font></span>
+    <div class="w3-display-middle w3-center">
+    <span><font color="#42607F">npc</font><font color="#B23F45">western</font></span>
   </div>
   <div class="w3-display-bottomleft w3-center w3-padding-large">
     <span class="w3-text-white">#20, St. 598C</span>
+  </div>
+</header> -->
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">The Newspaper Club from WIS</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:100px"><font color="#ede7dd"><b>NPC</b></font></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <a href="https://goo.gl/maps/L8msAGrfxhRXRH1h8" title="Western International School" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"><span class="w3-text-white">#20, St. 598C</span><a>
   </div>
 </header>
 
@@ -87,16 +116,19 @@ footer.a:active {
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE TEAM</span></h5>
-    <p>The WIS Newspaper is a group of students working to provide news and information about school events and important ocassions. Our team was formed after a long and tedious selection process that best fit to the needs of the student body.</p>
-    <p>We strive to provide validated informations to our readers, help reach the masses and help our Student Council by publishing and advertising their works. Our team hopes to continue publishing high quality articles with intriguing information to the best of our abilities.</p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
+  <div>
+    <h5 class="w3-center padding-100"><span class="w3-tag w3-wide">ABOUT THE TEAM</span></h5>
+	<p class="w3-center"><a href="publishes/team.html" class="w3-hover-text-green">The Members</a></p>
+	</div>
+    <p>The WIS Newspaper Club is a group of students working to provide news and information about school events and important ocassions. Our team was formed after a long and tedious selection process that best fits to the majority of the student body.</p>
+    <p>We strive to provide entertaining and useful information to our readers, help reach the masses and help our Student Council by publishing and advertising their works. Keep an eye on us to find out about ongoing events!</p>
+    <div class="w3-panel w3-leftbar w3-light-grey shadowAlt">
       <p><i>"Journalism is the first rough draft of history, in this case, our school's legacy."</i></p>
       <p>Head of NPC: Sovantheara Heang</p>
     </div>
 	<br><br>
     <p><strong>Operating hours:</strong> everyday, 24/7 because we have noLife™</p>
-    <p><strong>Main Contact: </strong><a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">@wis.newspc</a></p>
+    <p><strong>Socials: </strong><a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">@wis.newspc</a> <a href=mailto:nptwestern2022@gmail.com?subject=Contacting%20NPC target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"> nptwestern2022@gmail.com</a></p>
   </div>
 </div>
 
@@ -105,30 +137,40 @@ footer.a:active {
   <div class="w3-content" style="max-width:700px">
  
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PUBLISHES</span></h5>
+
   
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Issues');" id="myLink">
-        <div class="w3-col s6 tablink">Current Issues</div>
+        <div class="w3-col s6 tablink">Currently Released</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'tobeIssued');">
-        <div class="w3-col s6 tablink">To Be Issued</div>
+        <div class="w3-col s6 tablink">To Be Published</div>
       </a>
     </div>
 
+<!-- ###Currently Released### -->
     <div id="Issues" class="w3-container menu w3-padding-48 w3-card">
 	
-<!-- <a href="" class="w3-hover-text-green"></a> -->
+<!--Section-->
       <h5><a href="publishes/elac2022.html" class="w3-hover-text-green">Elac 2022 Report</a></h5>
-      <p class="w3-text-grey">The start of ELAC 2022 has been announced! Browse through the days and check out the pictures!<br>[Feb 1, 2023]</p><br>
+      <p class="w3-text-grey">The start of ELAC 2022 has been announced. Browse through the days and check out the pictures. Maybe you'll find yourself there!<br>[Feb 1, 2023]</p><br>
+	  
+<!--Section-->
+      <h5><a href="publishes/team.html" class="w3-hover-text-green">Team</a></h5>
+      <p class="w3-text-grey">The beginning of our story. Welcome our members!<br>[we're ancient]</p><br>
+
 
     </div>
 
+
+
+<!-- ###To Be Published### -->
     <div id="tobeIssued" class="w3-container menu w3-padding-48 w3-card">
 	
-<!-- <a href="" class="w3-hover-text-green"></a> -->
+<!--Section-->
       <h5>School Fair 2023</h5>
       <p class="w3-text-grey">Come one, come all! Our main campus has opened it's doors to all visitors to celebrate this joyous event!<br>[Feb 27, 2023]</p><br>
-
+	  
     </div>  
   </div>
 </div>
@@ -136,17 +178,20 @@ footer.a:active {
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <h5 class="w3-center w3-padding-48-alt"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
     <p>Find us at <i>#20, St. 598C, Toul Kok, Phnom Penh</i><br>(Or click the image below for directions!)</p>
-    <a href="https://goo.gl/maps/3snRQ2QykbfpigwT7" title="Western International School" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"><img src="img/index/map.png" class="w3-image shadowAlt" style="width:100%"></a>
-    <p><span class="w3-tag">FYI!</span> Members of the <strong>NPC</strong> are spread throughout different campuses. We are mainly present online so feel free to contact us on our <a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">social media.</a></p>
+    <a href="https://goo.gl/maps/L8msAGrfxhRXRH1h8" title="Western International School" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"><img src="img/index/map.png" class="w3-image shadowAlt" style="width:100%"></a>
+    <p><span class="w3-tag">FYI!</span> Members of the <strong>NPC</strong> are spread throughout different campuses. We are mainly present online so feel free to contact us on our <a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">social media</a>.</p>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Template from <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">w3.css</a></p>
-  <p>Design altered by <a href="https://github.com/ShadesOfEmerald" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">shadesofemerald</a></p>
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-opacity w3-xlarge">
+  <a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+  <p class="w3-medium">Template from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium">Design altered by <a href="https://github.com/ShadesOfEmerald" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">shadesofemerald</a></p>
+  <p class="w3-medium">©2022-2023</p>
 </footer>
 
 <script>

@@ -1,200 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>npc | ELAC 2022</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/elac2022.css">
-	<link rel="icon" href="../img/logo.png">
-	<style>
-a:link { 
-	text-decoration: none; 
-	color: inherit;
-	}
+<title>npc | ELAC 2022</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../img/logo.png">
+<link rel="stylesheet" href="../index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Inconsolata", sans-serif;}
+img {margin-bottom: -7px}
 
-a:visited { 
-	text-decoration: none;
-color: inherit;	
-	}
+.w3-row-padding img {margin-bottom: 14px}
 
-a:hover { 
-	text-decoration: none; 
-	color: inherit;
+header.p {
+	max-width: 10%;
 	}
-
-a:active { 
-	text-decoration: none; 
-	color: inherit;
-	}
-  </style>
+	
+p {font-size:18px;}
+</style>
 </head>
 <body>
-    <div id="loading">
-        <div id="spinner"></div>
-    </div>
-    <div id="magnify">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
-    </div>
-    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
-        <table>
-            <tr>
-                <td id="logo"><a href="../index.html">npc<span id="logoVar">western</span></a></td>
-                <td id="navigation">
-					<a href="#day1">Day 1</a>
-					<a href="#day2">Day 2</a>
-                    <a href="#day3">Day 3</a>
-					<a href="#day4">Day 4</a>
-					<a href="#day5">Day 5</a>
-                    <a href="#bio">About</a>
-                </td>
-            </tr>
-        </table>
-    </header>
-    <table id="top_part">
-        <tr>
-            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
-                <h1>Western International School<br><span id="aboutVar">ELAC 2022</span></h1>
-                <a href="#bio" style="text-decoration:none;"><button class="btn_one">About Us</button></a>
-				<br>
-            </td>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
-        </tr>
-    </table>
 
-<!Day 1>
-<div id="day1">
-	<div id="work">
-	<br><br>
-        <h1>Monday, Day 1</h1>
-		<h3>28.11.2022</h3>
-		<p>
-With the bustling aura of a busy school and excited students who can be seen across the campus, we, at last, announce the start of ELAC 2022!
-<br><br>
-Starting it off simply with a short story and essay writing in rooms 102 and 103, simultaneously a competition of extemporaneous speech is held in the library for students from grades 7 to 9.
-<br><br>
-In a room filled with creative minds and imaginations soaring uncontrollably, students have created wonderful and story-rich essays based on the prompts they were given for essay writing.
-<br><br>
-Back in the library, extemporaneous speech participants were asked to choose a random topic from a cup and a limited time was given for them to prepare. The students one after another gave great speeches and answered the judge's questions with ease.
-<br><br>
-Coming to the second half of the day, students from grades 10, 11, and 12 competed in another extemporaneous speech event whereas collaborative writing was given to our junior students from grades 5 and 6. 
-		</p>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/1/01.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/1/02.jpg">
-        </div>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+	
+	<div class="w3-row w3-padding w3-black">
+		<div class="w3-col s4">
+      <a href="../index.html" class="w3-button w3-block w3-black"><i class="fa fa-arrow-left w3-hover-opacity w3-hover-text-green"></i> HOME</a>
     </div>
+	<div class="w3-col s4">
+      <a href="#days" class="w3-button w3-block w3-black">DAYS [1-4]</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#awards" class="w3-button w3-block w3-black">AWARDS</a>
+    </div>
+	
+  </div>
 </div>
 
-<!Day 2>
-<div id="day2"><br><br>
-    <div id="work">
-        <h1>Tuesday, Day 2</h1>
-		<h3>29.11.2022</h3>
-		<p>
-The spelling bee started with the registration of students of the program.
-<br><br>
-We begin with a spelling bee for grades 1 to 5 and debates for grades 5 to 6.
-As each round goes on, dodging the disqualifications, our young contestants move on and continue to push through.
-<br><br>
-With great enthusiasm and with high-spirits, students competing in the debate have come from different campuses to participate.
-<br><br>
-With the afternoon quickly approaching, the debate for students in grades 7 through 9 and the spelling bee competition for grades 6 to 12 have started without a problem. Round after round, at the end of the day, we are left with the top three performers from each category.
-		</p>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/2/01.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/2/02.jpg">
-        </div>
-    </div>
+<!-- !PAGE HEADER! -->
+<div class="w3-content" style="max-width:1500px">
+ <div class="w3-padding-alt w3-opacity">
+  <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i>
+  </span> 
+  <div class="w3-clear">
+  </div>
+  <header id="days" class="w3-margin-bottom padding-100" style="max-width:900px">
+   <h1><b>English Language Arts Competition 2023</b></h1>
+    <p>As one of the bigger events that Western International School hosts for it's students, many participants of ELAC look forward to showing off their English skills to the public and competing against other competitors to secure one of the top 3 positions across many different competitions that utilize different skill sets from one another.</p>
+    <p><b><a href="#day1" class="w3-hover-text-green">Day [1]</a> - <a href="#day2" class="w3-hover-text-green">Day [2]</a> - <a href="#day3" class="w3-hover-text-green">Day [3]</a> - <a href="#day4" class="w3-hover-text-green">Day [4]</a> - <a href="#awards" class="w3-hover-text-green">Awarding Ceremony</b></a></p>
+  </header>
+ </div>
 </div>
-	
-	
-	
-	
-	<!Day 3>
-<div id="day3"><br><br>
-	<div id="work">
-        <h1>Wednesday, Day 3</h1>
-		<h3>30.11.2022</h3>
-		<p>
-The second day starts strong with young students from all campuses in grades 1 and 2 being invited to a poetry recitation competition. After giving a listen to the recitations, the judges narrowed their choices down to three people.
-<br><br>
-Right after, teams of debaters consisting of students from grades 10 to 12 have given us an interesting look at their opinions and their hard work in their research.
-<br><br>
-The day ends with two more competitions. The spoken word poetry contest with the keyword "LOVE"; where through careful analysis of rhythm and tone, the top three finishers have been revealed. And the next round of debates for grades 5 through 9 have smoothly passed.
-		</p>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/3/01.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/3/02.jpg">
-        </div>
-    </div>
+
+
+<!-- SECTION day 1-->
+<div class="w3-content" style="max-width:1500px" id="day1">
+ <div class='w3-padding w3-opacity' style="max-width:900px">
+  <h3><b>DAY 1</b></h3>
+   <p>&nbsp&nbspWith the bustling aura of a busy school and excited students who can be seen across the campus, we, at last, announce the start of ELAC 2022!
+<br>&nbsp&nbspStarting it off simply with a <b>short story</b> and <b>essay writing</b> in rooms 102 and 103, simultaneously a competition of <b>extemporaneous speech</b> is held in the library for students from grades 7 to 9.
+<br>&nbsp&nbspIn a room filled with creative minds and imaginations soaring uncontrollably, students have created wonderful and story-rich essays based on the prompts they were given for essay writing.
+<br>&nbsp&nbspBack in the library, extemporaneous speech participants were asked to choose a random topic from a cup and a limited time was given for them to prepare. The students one after another gave great speeches and answered the judge's questions with ease.
+<br>&nbsp&nbspComing to the <i>second half</i> of the day, students from grades 10, 11, and 12 competed in another <b>extemporaneous speech</b> event whereas collaborative writing was given to our junior students from grades 5 and 6.</p>
+ </div>
+ <div class="w3-row-padding", "w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+   <img src="../img/elac2022/1/1.jpg" style="width:100%">
+   <img src="../img/elac2022/1/4.jpg" style="width:100%">
+   
+  </div>
+  <div class="w3-third"> 
+    <img src="../img/elac2022/1/5.jpg" style="width:100%">
+  </div>
+  <div class="w3-third">
+    <img src="../img/elac2022/1/3.jpg" style="width:100%">
+	<img src="../img/elac2022/1/6.jpg" style="width:100%">
+	<img src="../img/elac2022/1/2.jpg" style="width:100%">
+
+  </div>
+ </div>
 </div>
-	
-	
-	
-	
-	<!Day 4>
-<div id="day4"><br><br>
-	<div id="work">
-        <h1>Thursday, Day 4</h1>
-		<h3>01.12.2022</h3>
-		<p>
-As we prepare to start our morning, we welcome students to compete in: story chains, debates for grades 10-12 as well as show and tell.
-<br><br>
-We observed students from grades 1 to grade 3 participate in our story chain and show-and-tell category, the winners were announced at the end of each round. The next round of debate for our 10th, 11th, and 12th graders ended with the top six teams competing for the gold position.
-<br><br>
-The final debate rounds in the class category of grades 5 to 12 have kept growing intense as students toughen up. In the end, the gold medalist announcement had to be put off for Friday.
-		</p>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/4/01.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/4/02.jpg">
-        </div>
-    </div>
+
+
+
+<!-- SECTION day 2-->
+<div class="w3-content" style="max-width:1500px" id="day2">
+ <div class='w3-padding w3-opacity' style="max-width:900px">
+  <h3><b>DAY 2</b></h3>
+   <p>&nbsp&nbspThe first <b>spelling bee</b> started with the registration of participating students from grades 1 to 5 and <b>debates</b> for grades 5 to 6.
+   <br>&nbsp&nbspAs each round goes on, dodging the disqualifications, our young contestants move on and continue to push through.
+<br>&nbsp&nbspWith great enthusiasm and with high-spirits, students competing in the <b>debate</b> have come from different campuses to participate.
+<br>&nbsp&nbspWith the afternoon quickly approaching, the <b>debate</b> for students in grades 7 through 9 and the <b>spelling bee</b> competition for grades 6 to 12 have started without a problem. Round after round, at the end of the day, we are left with the top three performers from each category.</p>
+ </div>
+  <div class="w3-row-padding", "w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+   <img src="../img/elac2022/2/6.jpg" style="width:100%">
+   <img src="../img/elac2022/2/5.jpg" style="width:100%">
+  </div>
+  <div class="w3-third"> 
+   <img src="../img/elac2022/2/4.jpg" style="width:100%">
+   <img src="../img/elac2022/2/2.jpg" style="width:100%">
+  </div>
+  <div class="w3-third">
+   <img src="../img/elac2022/2/3.jpg" style="width:100%">
+   <img src="../img/elac2022/2/1.jpg" style="width:100%">
+  </div>
+ </div>
 </div>
-	
-	
-	
-	
-	<!Day 5>
-<div id="day5"><br><br>
-	<div id="work">
-        <h1>Friday, <br>Awarding Ceremony</h1>
-		<h3>02.12.2022</h3>
-		<p>
-As we open up the championship in the CHAK ANGRE campus, we had speeches referring to the opening of a new school, dance performances, awarding to both KLAC and ELAC medalists, and the final announcement for the top 3 in each category.
-<br><br>
-As our championship comes to an end, every gold medalist competes for the final prize: the <em>championship cup.</em>
-<br><br>
-The program ended with handing out certificates of participation to students who contested in the competition, and the presentation of gifts and certificates of excellence to the best teams and debate speakers.
-		</p>
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/5/01.jpg">
-            <img onclick="magnify($(this).attr('src'))" src="../img/elac2022/5/02.jpg">
-        </div>
-    </div>
+
+
+
+<!-- SECTION day 3-->
+<div class="w3-content" style="max-width:1500px" id="day3">
+ <div class='w3-padding w3-opacity' style="max-width:900px">
+  <h3><b>DAY 3</b></h3>
+   <p>&nbsp&nbspThe third day starts strong with young students from all campuses grades 1 and 2 being invited to a <b>poetry recitation</b> competition. After giving a listen to the recitations, the judges narrowed their choices down to <i>three people</i>.
+<br>&nbsp&nbspRight after, <b>teams of debaters</b> consisting of students from grades 10 to 12 have given us an interesting look at their opinions and their hard work in their research.
+<br>&nbsp&nbspThe day ends with two more competitions. The <b>spoken word poetry contest with the keyword "LOVE";</b> where through careful analysis of rhythm and tone, the top three finishers have been revealed. And the next round of <b>debates</b> for grades 5 through 9 have smoothly passed.</p>
+ </div>
+ <div class="w3-row-padding", "w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+   <img src="../img/elac2022/3/1.jpg" style="width:100%">
+   <img src="../img/elac2022/3/2.jpg" style="width:100%">
+  </div>
+  <div class="w3-third"> 
+   <img src="../img/elac2022/3/3.jpg" style="width:100%">
+  </div>
+  <div class="w3-third"> 
+   <img src="../img/elac2022/3/4.jpg" style="width:100%">
+  </div>
+ </div>
 </div>
-	
-	
-	
-	
-	
-    <div id="bio">
-        <h1>About Us</h1>
-        <p>
-            The WIS Newspaper is a group of students working to provide news and information about school events and important ocassions. Our team was formed after a long and tedious selection process that best fit to the needs of the student body. We strive to provide validated informations to our readers, help reach the masses and help our Student Council by publishing and advertising their works. Our team hopes to continue publishing high quality articles with intriguing information to the best of our abilities.
-        </p>
-    </div>
-	
-    <div id="footer">
-	<div><h3><a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer">Instagram</a></h3><br></div>
-        template made on earth by a human <a href="https://imfunniee.github.io">imfunniee</a>
-		<br> edited by <a href="https://shadesofemerald.github.io">shadesofemerald</a>
-    </div>
-    <script src="../assets/elac2022.js" type="text/javascript"></script>
+
+
+
+<!-- SECTION day 4-->
+<div class="w3-content" style="max-width:1500px" id="day4">
+ <div class='w3-padding w3-opacity' style="max-width:900px">
+  <h3><b>DAY 4</b></h3>
+   <p>&nbsp&nbspAs we prepare to start our morning, we welcome students to compete in: <b>story chains, debates</b> (for grades 10 to 12) and <b>Show & Tell.</b>
+<br>&nbsp&nbspWe observed students from grades 1 to grade 3 participate in our <b>story chain</b> and <b>Show & Tell</b> category, the winners were announced at the end of each round. The next round of <b>debate</b> for our 10th, 11th, and 12th graders ended with the top six teams competing for the gold position.
+<br>&nbsp&nbspThe <b>final debate</b> rounds in the class category of grades 5 to 12 have kept growing intense as students toughen up. In the end, the <b>gold medalist announcement</b> had to be put off for Friday.</p>
+ </div>
+ <div class="w3-row-padding", "w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+   <img src="../img/elac2022/4/1.jpg" style="width:100%">
+   <img src="../img/elac2022/4/2.jpg" style="width:100%">
+  </div>
+  <div class="w3-third"> 
+   <img src="../img/elac2022/4/3.jpg" style="width:100%">
+  </div>
+  <div class="w3-third"> 
+   <img src="../img/elac2022/4/4.jpg" style="width:100%">
+  </div>
+ </div>
+</div>
+
+
+
+<!-- SECTION awards-->
+<div class="w3-content" style="max-width:1500px" id="awards">
+ <div class='w3-padding w3-opacity' style="max-width:850px">
+  <h3><b>AWARDING CEREMONY</b></h3>
+   <p>&nbsp&nbspAs we open up the <b>championship</b> in the <b>CHAK ANGRE</b> campus, we had <b>speeches</b> referring to the opening of a new school, <b>dance performances</b>, <b>awarding</b> to both <b>KLAC</b> and <b>ELAC</b> medalists, and the <b>final announcement</b> for the top 3 in each category.
+<br>&nbsp&nbspAs our championship comes to an end, every gold medalist competes for the final prize: the <b><em>championship cup.</em></b>
+<br>&nbsp&nbspThe program ended with handing out certificates of participation to students who participated in the competition, and the presentation of gifts and certificates of excellence to the best teams and debate speakers.</p>
+ </div>
+ <div class="w3-row-padding", "w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+   <img src="https://i.pinimg.com/236x/fe/1f/3c/fe1f3c463d97ce839506a64978932c43.jpg" style="width:100%">
+  </div>
+  <div class="w3-third"> 
+    <img src="https://i.pinimg.com/236x/a6/88/69/a68869dc6f3e9a91a69185373c039c8b.jpg" style="width:100%">
+  </div>
+  <div class="w3-third">
+    <img src="https://i.pinimg.com/236x/f1/18/ec/f118ec5221c20dee15b58ae98e2ac775.jpg" style="width:100%">
+  </div>
+ </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-opacity w3-xlarge">
+  <a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+  <p class="w3-medium">Template from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p class="w3-medium">Design altered by <a href="https://github.com/ShadesOfEmerald" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">shadesofemerald</a></p>
+  <p class="w3-medium">©2022-2023</p>
+</footer>
+
 </body>
 </html>
-
