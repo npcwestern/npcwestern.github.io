@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>npc | ELAC 2022</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../img/logo.png">
+		<link rel="stylesheet" href="../index.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body,h1 {font-family: "Inconsolata", sans-serif;}
+			img {margin-bottom: -7px}
+			
+			.w3-row-padding img {margin-bottom: 14px}
+			
+			header.p {
+			max-width: 10%;
+			}
+			
+			p {font-size:18px;}
+		</style>
+	</head>
+	<body>
+		
+		<!-- Links (sit on top) -->
+		<div class="w3-top">
+			
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s4">
+					<a href="../index.html" class="w3-button w3-block w3-black"><i class="fa fa-arrow-left w3-hover-opacity w3-hover-text-green"></i> HOME</a>
+				</div>
+				<div class="w3-col s4">
+					<a href="#npc" class="w3-button w3-block w3-black">NPC Team</a>
+				</div>
+				<div class="w3-col s4">
+					<a class="w3-button w3-block w3-black"></a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- !PAGE HEADER! -->
+		<div class="w3-content" style="max-width:1900px">
+			<div class="w3-opacity">
+				<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i>
+				</span> 
+				<div class="w3-clear">
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="w3-content" style="max-width:1300px">
+			
+			<header id="npc" class="w3-margin-bottom padding-80 w3-opacity" style="max-width:900px">
+				<h1><b>Welcome our members of the 2022-2023 NPC Team</b></h1>
+				<p>(Click on the pictures!)</p>
+			</header>
+			
+			<!-- Push down content on small screens --> 
+			<div class="w3-hide-large" style="margin-top:83px"></div>
+			<!-- Photo grid -->
+			<div class="w3-row">
+				<div class="w3-half">
+					<img src="../img/team/photographers.jpg" style="width:100%" onclick="onClick(this)" alt="Capturing Images and events, the essential part of our club, talented in photography. Introducing our photographers:<br><br>Heang Meng Thean from 11K<br>Heng Sunly from 9A<br>Sophat Panha Wathana 11G<br>Ly Kong Ratanak 11A<br>Chau Chan Kethya 11A">
+					<img src="../img/team/writers.jpg" style="width:100%" onclick="onClick(this)" alt="The people working behind the scene , the heroes behind the news and the backbone of the WIS newspaper establishment. Introducing the article writers:<br><br>Nouv Chankosal from the class of 12F<br>Soun Chan Ravin from the class 11K">
+				</div>
+				<div class="w3-half">
+					<img src="../img/team/interviewers.jpg" style="width:100%" onclick="onClick(this)" alt="Lovely and friendly, sprouting with sociable energy.<br>Introducing our esteem Interviewers:<br><br>Le Fariza from class 10A<br>Sok Sorya from class 11G">
+					<img src="../img/team/editors.jpg" style="width:100%" onclick="onClick(this)" alt="Editing their way into our heart and the designers of all the news of the team. Introducing the editors:<br><br>Bo Mey Mey from class 12B<br>Sing Soneth 12C">
+				</div>
+			</div>
+			
+			<!-- Modal for full size images on click-->
+			<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+				<span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+				<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+					<img id="img01" class="w3-image">
+					<p id="caption"></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- Footer -->
+		<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-opacity w3-xlarge">
+			<a href="https://www.instagram.com/wis.newspc/" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+			
+			<p class="w3-medium">Template from <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+			<p class="w3-medium">Design altered by <a href="https://github.com/ShadesOfEmerald" target="_blank" rel="noopener noreferrer" class="w3-hover-text-green">shadesofemerald</a></p>
+			<p class="w3-medium">©2022-2023</p>
+		</footer>
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
+			}
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
